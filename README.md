@@ -22,7 +22,7 @@ For instance this code
 
     arry = [1, 2, 3, 4, 5]
 
-    a.each_with_time_interval(2) do |el|
+    arry.each_with_time_interval(2) do |el|
       # do something
     end
 
@@ -30,7 +30,7 @@ runs in 8 seconds, and this code
 
     arry = [1, 2, 3, 4, 5]
 
-    a.each_with_time_interval(2) do |el|
+    arry.each_with_time_interval(2) do |el|
       sleep 1
     end
 
@@ -38,7 +38,7 @@ runs in 9 seconds (1 extra second on a sleep on a last iteration), and
 
     arry = [1, 2, 3, 4, 5]
 
-    a.each_with_time_interval(2) do |el|
+    arry.each_with_time_interval(2) do |el|
       sleep 3
     end
 
@@ -46,7 +46,7 @@ runs in 15 seconds ignoring the interval 2.
 
 Methods #each_slice_with_time_interval(slice, interval)
 
-    a.each_slice_with_time_interval(3, 1) do |el_slice|
+    arry.each_slice_with_time_interval(3, 1) do |el_slice|
       # do something
     end
 
